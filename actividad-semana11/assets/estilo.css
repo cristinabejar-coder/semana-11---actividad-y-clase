@@ -1,0 +1,25 @@
+:root {
+    --slate: #2f4660;
+    --slate-2: #4a6785;
+    --mist: #e8eef5;
+    --mist-2: #cfdae8;
+    --line: #a9bbd0;
+}
+body { background: var(--mist); color: #1d2a3a; min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
+.app-navbar { background: var(--slate); }
+.app-navbar .nav-link { color: #cfdae8; }
+.app-navbar .nav-link:hover, .app-navbar .nav-link.active { color: #fff; font-weight: 600; }
+.panel { background: #fff; border: 1px solid var(--line); border-radius: .9rem; overflow: hidden;
+         box-shadow: 0 .25rem 1rem rgba(31, 50, 75, .08); }
+.panel-head { background: var(--mist-2); border-bottom: 1px solid var(--line); padding: .6rem 1rem;
+              font-weight: 700; font-size: .85rem; letter-spacing: .04em; text-transform: uppercase; }
+.panel-body { padding: 1rem; }
+.categoria { color: var(--slate-2); font-weight: 700; letter-spacing: .05em; text-transform: uppercase; font-size: .8rem; }
+.caso-item { border: 1px solid var(--line); border-radius: .75rem; padding: 1rem; background: #fff; height: 100%; }
+.enunciado { background: var(--mist); border: 1px solid var(--line); border-radius: .75rem; padding: .6rem .9rem; }
+.btn-slate { background: var(--slate-2); border-color: var(--slate-2); color: #fff; font-weight: 600; }
+.btn-slate:hover { background: var(--slate); border-color: var(--slate); color: #fff; }
+.sql-code { background: #1e1e1e; color: #d4d4d4; border-radius: .6rem; padding: .9rem 1rem; margin: 0;
+            font: .85rem/1.5 Consolas, "Courier New", monospace; white-space: pre-wrap; }
+.sql-code .k { color: #569cd6; }
